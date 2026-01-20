@@ -233,10 +233,10 @@ layers:
   - RGB EFF
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - RGB EFR
+  - Ctl+$$mdi:arrow-left-bold$$
   - RGB SPI
   - RGB BRI
-  - RGB BRD
+  - Ctl+$$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
