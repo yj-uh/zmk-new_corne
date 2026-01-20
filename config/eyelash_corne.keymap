@@ -37,10 +37,10 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        hold_toggle: hold_toggle {
+        hold_to: hold_to {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TOGGLE";
-            bindings = <&kp>, <&tog>;
+            label = "HOLD_TO";
+            bindings = <&kp>, <&to>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -76,10 +76,10 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E                &kp R           &kp T                                  &kp UP                &kp Y      &kp U   &kp I           &kp O    &kp P     &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D                &kp F           &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J   &kp K           &kp L    &kp SEMI  &kp SQT
-&kp GRAVE   &kp Z  &kp X  &kp C                &kp V           &kp B           &kp SPACE              &kp DOWN              &kp N      &kp M   &kp COMMA       &kp DOT  &kp FSLH  &kp ENTER
-                          &hold_toggle LALT 0  &mt LGUI SPACE  &kp LEFT_SHIFT                                               &kp LCTRL  &tog 1  &lt 4 CAPSLOCK
+&kp ESCAPE  &kp Q  &kp W  &kp E            &kp R           &kp T                                  &kp UP                &kp Y      &kp U   &kp I           &kp O    &kp P     &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D            &kp F           &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &kp J   &kp K           &kp L    &kp SEMI  &kp SQT
+&kp GRAVE   &kp Z  &kp X  &kp C            &kp V           &kp B           &kp SPACE              &kp DOWN              &kp N      &kp M   &kp COMMA       &kp DOT  &kp FSLH  &kp ENTER
+                          &hold_to LALT 0  &mt LGUI SPACE  &kp LEFT_SHIFT                                               &kp LCTRL  &tog 1  &lt 4 CAPSLOCK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
