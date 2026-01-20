@@ -115,10 +115,10 @@
         fn_layer4 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1           &kp F2          &kp F3        &kp F4        &kp F5                                         &mmv MOVE_UP                     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10     &kp F11
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp INSERT  &kp F12
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp DELETE  &kp PAUSE_BREAK
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &kp F1           &kp F2          &kp F3        &kp F4        &kp F5                                         &mmv MOVE_UP                     &kp F6        &kp F7           &kp F8           &kp F9         &kp F10     &kp F11
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT      &kp DOWN         &kp UP           &kp RIGHT      &kp INSERT  &kp F12
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LC(LEFT)  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &kp LC(RIGHT)  &kp DELETE  &kp PAUSE_BREAK
+                                         &trans        &trans        &trans                                                                          &kp INS       &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
