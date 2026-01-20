@@ -86,7 +86,7 @@ layers:
   - RGB EFF
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: /, s: '?'}
+  - {t: '0', s: )}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - SYMBOL
   - {t: SYMBOL, h: toggle}
-  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
