@@ -17,7 +17,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - A
   - S
-  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
@@ -25,7 +25,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - H
   - J
-  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - K
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
