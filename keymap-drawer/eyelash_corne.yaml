@@ -123,9 +123,9 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
   - {t: '=', s: +}
+  - \
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: \, s: '|'}
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
@@ -137,9 +137,9 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
   - +
+  - '|'
   - '{'
   - '}'
-  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -158,9 +158,9 @@ layers:
   - {t: 'Gui+[', s: 'Gui+{'}
   - Ctl+Sft+$$mdi:keyboard-tab$$
   - Ctl+$$mdi:keyboard-tab$$
-  - Gui+F9
-  - F10
-  - F11
+  - {t: 'Gui+]', s: 'Gui+}'}
+  - PREVIOUS
+  - $$mdi:skip-next$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -174,8 +174,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - PRINTSCREEN
-  - F12
+  - Sft+Gui+4
+  - Ctl+Gui+Sft+4
   - {t: '$$mdi:transfer$$', type: trans}
   - '&studio_unlock'
   - $$mdi:pan-left$$
@@ -188,7 +188,7 @@ layers:
   - PG DN
   - PG UP
   - END
-  - SCROLLLOCK
+  - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
