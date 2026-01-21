@@ -146,19 +146,19 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: arrow, h: toggle}
-  arrow:
-  - '&studio_unlock'
-  - F1
+  - {t: navi, h: toggle}
+  navi:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+W
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F6
-  - F7
-  - F8
-  - F9
+  - {t: 'Gui+[', s: 'Gui+{'}
+  - Ctl+Sft+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
+  - Gui+F9
   - F10
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,10 +177,10 @@ layers:
   - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
+  - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: QWERTY, h: toggle}
   Fn:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
   - F1
   - F2
   - F3
@@ -224,7 +224,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - F11
-  - Sft+Gui+Ctl+4
+  - {t: navi, h: toggle}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB OFF
   - RGB ON
