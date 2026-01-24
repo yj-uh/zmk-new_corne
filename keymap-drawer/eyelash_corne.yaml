@@ -48,7 +48,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:apple-keyboard-caps$$', h: navi}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: SYMNUM, h: toggle}
+  - {t: Fn, h: toggle}
   SYMNUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -79,8 +79,8 @@ layers:
   - +
   - \
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+Gui+4
+  - Sft+Gui+Ctl+4
   - '{'
   - '}'
   - '&'
@@ -92,8 +92,8 @@ layers:
   - {t: '3', s: '#'}
   - {t: SYMNUM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
-  - {t: QWERTY, h: toggle, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: QWERTY, h: toggle}
   - <
   - {t: '0', s: )}
@@ -110,10 +110,10 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - PREVIOUS
-  - $$mdi:skip-next$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -125,8 +125,8 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Sft+Gui+4
-  - Ctl+Gui+Sft+4
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
@@ -135,16 +135,16 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - HOME
-  - $$mdi:skip-previous$$
-  - PLAY PAUSE
-  - $$mdi:skip-next$$
-  - PLAY PAUSE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Alt+$$mdi:arrow-left-bold$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Alt+$$mdi:arrow-right-bold$$
+  - {t: navi, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: 'Ctl+Alt+$$mdi:arrow-left-bold$$', type: held}
+  - {t: QWERTY, h: toggle}
+  - {type: held}
   - Ctl+Alt+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   Fn:
@@ -184,7 +184,7 @@ layers:
   - RGB EFF
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - HOME
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PG DN
   - PgUp
   - END
