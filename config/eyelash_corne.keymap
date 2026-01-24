@@ -79,7 +79,7 @@
 &kp ESCAPE       &kp Q  &kp W  &kp E         &kp R        &kp T                                  &kp UP                &kp Y       &kp U      &kp I      &kp O    &kp P     &kp BSPC
 &mt LCTRL TAB    &kp A  &kp S  &kp D         &kp F        &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &mt LSHFT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B           &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
-                               &mt LGUI TAB  &lt 1 SPACE  &kp LEFT_SHIFT                                               &lt 4 CAPS  &kp ENTER  &to 1
+                               &mt LGUI TAB  &lt 1 SPACE  &kp LEFT_SHIFT                                               &lt 2 CAPS  &kp ENTER  &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -88,34 +88,22 @@
         symnum_layer1 {
             display-name = "SYMNUM";
             bindings = <
-&trans  &kp EXCL  &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT                                &mmv MOVE_UP                     &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS          &kp BSPC
-&trans  &kp HASH  &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp NON_US_BACKSLASH
-&trans  &none     &none       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET  &trans
-                              &trans                &trans                 &trans                                                                      &kp LT     &kp N0  &kp GT
+&trans  &kp EXCL  &kp AT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT                                &mmv MOVE_UP                     &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp BSPC
+&trans  &kp HASH  &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS   &kp NON_US_BACKSLASH
+&trans  &none     &none       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &tog 1     &trans
+                              &to 0                 &to 0                  &to 0                                                                       &kp LT     &kp N0  &kp GT
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 
-        symbol_layer2 {
-            display-name = "SYMBOL";
-            bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK             &kp LPAR          &kp RPAR           &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp PIPE              &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-                                    &trans     &trans     &trans                                                                &trans     &trans     &to 3
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        navi_layer3 {
+        navi_layer2 {
             display-name = "navi";
             bindings = <
-&trans  &kp LG(W)       &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                                  &mmv MOVE_UP                     &kp LG(LEFT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LG(RIGHT_BRACKET)  &kp C_PREVIOUS        &kp C_NEXT
-&trans  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT              &kp DOWN         &kp UP       &kp RIGHT              &kp LS(LG(NUMBER_4))  &kp LC(LG(LS(NUMBER_4)))
-&trans  &studio_unlock  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME              &kp PG_DN        &kp PG_UP    &kp END                &kp C_PLAY_PAUSE      &trans
-                                        &trans          &trans           &trans                                                                         &trans                &trans           &to 0
+&trans  &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                                  &mmv MOVE_UP                     &kp PAGE_UP       &kp HOME          &kp UP_ARROW       &kp END     &kp C_PREVIOUS        &kp C_NEXT
+&trans  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN     &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT   &kp LS(LG(NUMBER_4))  &kp LC(LG(LS(NUMBER_4)))
+&trans  &none      &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME          &kp C_PREV        &kp C_PLAY_PAUSE   &kp C_NEXT  &kp C_PLAY_PAUSE      &trans
+                                   &trans          &trans           &trans                                                                         &kp LC(LA(LEFT))  &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -124,10 +112,10 @@
         fn_layer4 {
             display-name = "Fn";
             bindings = <
-&soft_off    &kp F1           &kp F2          &kp F3           &kp F4           &kp F5                                         &mmv MOVE_UP                     &kp PAGE_UP    &kp HOME          &kp UP_ARROW       &kp END    &kp F10  &kp DELETE
-&bootloader  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT  &kp F11  &to 3
-&sys_reset   &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME       &kp PG_DN         &kp PAGE_UP        &kp END    &kp F12  &trans
-                                              &trans           &trans           &to 5                                                                           &trans         &kp LC(LA(LEFT))  &kp LA(LC(RIGHT))
+&trans  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5                                         &mmv MOVE_UP                     &kp PAGE_UP    &kp HOME          &kp UP_ARROW       &kp END    &kp F10  &kp DELETE
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT  &kp F11  &to 2
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME       &kp PG_DN         &kp PAGE_UP        &kp END    &kp F12  &trans
+                                         &trans           &trans           &to 4                                                                           &trans         &kp LC(LA(LEFT))  &kp LA(LC(RIGHT))
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -137,7 +125,7 @@
             display-name = "sys";
             bindings = <
 &soft_off   &none         &none         &none         &none         &out OUT_BLE                                &mmv MOVE_UP                     &none     &none      &none        &none      &none    &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN   &kp UP       &kp RIGHT  &kp F11  &to 3
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN   &kp UP       &kp RIGHT  &kp F11  &to 2
 &sys_reset  &none         &none         &none         &none         &out OUT_USB  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME  &kp PG_DN  &kp PAGE_UP  &kp END    &kp F12  &trans
                                         &to 0         &to 0         &to 0                                                                        &to 0     &to 0      &to 0
             >;
