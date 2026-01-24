@@ -76,22 +76,22 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE     &kp Q  &kp W  &kp E            &kp R      &kp T                                  &kp UP                &kp Y       &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB  &kp A  &kp S  &kp D            &kp F      &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp GRAVE      &kp Z  &kp X  &kp C            &kp V      &kp B           &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
-                             &hold_to LGUI 0  &kp SPACE  &kp LEFT_SHIFT                                               &lt 4 CAPS  &kp ENTER  &to 1
+&kp ESCAPE       &kp Q  &kp W  &kp E         &kp R        &kp T                                  &kp UP                &kp Y       &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB    &kp A  &kp S  &kp D         &kp F        &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&mt LSHFT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B           &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
+                               &mt LGUI TAB  &lt 1 SPACE  &kp LEFT_SHIFT                                               &lt 4 CAPS  &kp ENTER  &to 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        number_layer1 {
-            display-name = "NUMBER";
+        symnum_layer1 {
+            display-name = "SYMNUM";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3    &kp N4      &kp N5                                         &mmv MOVE_UP                     &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp BSPC
-&trans  &kp EXCLAMATION  &kp AT          &kp HASH  &kp DOLLAR  &kp PERCENT                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans    &trans      &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp MINUS  &kp EQUAL      &kp SLASH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-                                         &trans    &trans      &trans                                                                          &trans     &trans         &to 2
+&trans  &kp EXCL  &kp AT          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT                                &mmv MOVE_UP                     &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS          &kp BSPC
+&trans  &kp HASH  &kp DOLLAR      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS           &kp NON_US_BACKSLASH
+&trans  &none     &rgb_ug RGB_ON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp RIGHT_BRACKET  &trans
+                                  &trans                &trans                 &trans                                                                      &kp LT     &kp N0  &kp GT
             >;
 
             sensor-bindings = <&scroll_encoder>;
