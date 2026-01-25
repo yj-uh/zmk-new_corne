@@ -171,9 +171,9 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - PgDn
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
   - F11
   - {t: sys, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -185,9 +185,9 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PG DN
-  - PgUp
-  - END
+  - $$mdi:skip-previous$$
+  - PLAY PAUSE
+  - $$mdi:skip-next$$
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
