@@ -76,10 +76,10 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE       &kp Q  &kp W  &kp E         &kp R        &kp T                                  &kp UP                &kp Y       &kp U      &kp I                   &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB    &kp A  &kp S  &kp D         &kp F        &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K                   &kp L    &kp SEMI  &kp SQT
-&mt LSHFT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B           &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA               &kp DOT  &kp FSLH  &kp LALT
-                               &mt LGUI TAB  &lt 1 SPACE  &kp LEFT_SHIFT                                               &lt 2 CAPS  &kp ENTER  &lt 3 NON_US_BACKSLASH
+&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R        &kp T                                  &kp UP                &kp Y       &kp U      &kp I                   &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F        &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K                   &kp L    &kp SEMI  &kp SQT
+&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B           &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA               &kp DOT  &kp FSLH  &kp LALT
+                              &mt LGUI TAB  &lt 1 SPACE  &kp LEFT_SHIFT                                               &lt 2 CAPS  &kp ENTER  &lt 3 NON_US_BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
