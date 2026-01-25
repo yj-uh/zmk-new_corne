@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
 
         hold_to: hold_to {
@@ -76,10 +76,10 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R        &kp T                                  &kp UP                &kp Y       &kp U      &kp I                   &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F        &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K                   &kp L    &kp SEMI  &kp SQT
-&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B           &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA               &kp DOT  &kp FSLH  &kp LALT
-                              &mt LGUI TAB  &lt 1 SPACE  &kp LEFT_SHIFT                                               &lt 2 CAPS  &kp ENTER  &lt 3 NON_US_BACKSLASH
+&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R        &kp T                         &kp UP                &kp Y       &kp U      &kp I                   &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F        &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J      &kp K                   &kp L    &kp SEMI  &kp SQT
+&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B  &kp SPACE              &kp DOWN              &kp N       &kp M      &kp COMMA               &kp DOT  &kp FSLH  &kp LALT
+                              &mt LGUI TAB  &lt 1 SPACE  &td0                                                &lt 2 CAPS  &kp ENTER  &lt 3 NON_US_BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -112,10 +112,10 @@
         fn_layer3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1           &kp F2          &kp F3           &kp F4           &kp F5                                         &mmv MOVE_UP                     &kp F6         &kp F7             &kp F8             &kp F9           &kp F10  &kp DELETE
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp C_VOLUME_DOWN  &kp C_MUTE         &kp C_VOLUME_UP  &kp F11  &to 4
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &none          &kp C_PREV         &kp C_PLAY_PAUSE   &kp C_NEXT       &kp F12  &trans
-                                         &trans           &trans           &to 0                                                                           &trans         &kp LC(LA(LEFT))   &kp LA(LC(RIGHT))
+&trans  &kp F1  &kp F2  &kp F3           &kp F4           &kp F5                                         &mmv MOVE_UP                     &kp F6         &kp F7             &kp F8             &kp F9           &kp F10  &kp DELETE
+&trans  &none   &none   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp C_VOLUME_DOWN  &kp C_MUTE         &kp C_VOLUME_UP  &kp F11  &to 4
+&trans  &none   &none   &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp C_MUTE                    &mmv MOVE_DOWN                   &none          &kp C_PREV         &kp C_PLAY_PAUSE   &kp C_NEXT       &kp F12  &trans
+                        &trans           &trans           &to 0                                                                           &trans         &kp LC(LA(LEFT))   &kp LA(LC(RIGHT))
             >;
 
             sensor-bindings = <&scroll_encoder>;
