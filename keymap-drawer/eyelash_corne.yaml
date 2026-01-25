@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
+  - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
   - Z
   - X
   - C
