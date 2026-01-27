@@ -48,7 +48,7 @@ layers:
   - '&td0'
   - {t: '$$mdi:apple-keyboard-caps$$', h: navi}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: \, h: Fn}
+  - {t: \, h: Fn, s: '|'}
   SYMNUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -77,8 +77,8 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - +
-  - \
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
+  - '~'
   - Sft+Gui+4
   - Sft+Gui+Ctl+4
   - '{'
