@@ -100,7 +100,7 @@
         navi_layer2 {
             display-name = "navi";
             bindings = <
-&trans  &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                                  &mmv MOVE_UP                     &kp PAGE_UP    &kp HOME          &kp UP_ARROW       &kp END        &none                 &none
+&trans  &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                                  &mmv MOVE_UP                     &kp PAGE_UP    &kp LG(LEFT)      &kp UP_ARROW       &kp LG(RIGHT)  &kp HOME              &kp END
 &trans  &kp LALT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
 &trans  &none      &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &kp C_MUTE                    &mmv MOVE_DOWN                   &none          &kp LA(LEFT)      &none              &kp LA(RIGHT)  &tog 2                &trans
                                    &trans          &trans           &trans                                                                         &trans         &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))
