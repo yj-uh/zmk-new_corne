@@ -90,7 +90,7 @@
             bindings = <
 &to 0      &kp EXCL              &kp AT                    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT                                &mmv MOVE_UP                     &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp BSPC
 &trans     &kp HASH              &kp DOLLAR                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp COLON  &to 1
-&kp TILDE  &kp LS(LG(NUMBER_4))  &kp LS(LG(LC(NUMBER_4)))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp PLUS   &trans
+&kp TILDE  &kp LS(LG(NUMBER_4))  &kp LS(LG(LC(NUMBER_4)))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp PLUS   &kp PERIOD
                                                            &trans                &trans                 &trans                                                                      &kp LT     &kp N0  &kp GT
             >;
 
