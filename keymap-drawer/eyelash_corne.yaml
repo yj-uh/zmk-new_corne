@@ -107,11 +107,11 @@ layers:
   - $$mdi:pan-up$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - PgUp
-  - HOME
+  - Gui+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
+  - HOME
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
