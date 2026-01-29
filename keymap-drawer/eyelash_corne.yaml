@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: QWERTY, h: toggle, type: held}
   - Ctl+Alt+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   Fn:
