@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - {t: '$$mdi:keyboard-space$$', h: SYMNUM}
   - '&td0'
-  - {t: 'Ctl+$$mdi:keyboard-space$$', h: navi}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: navi}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: \, h: Fn, s: '|'}
   SYMNUM:
