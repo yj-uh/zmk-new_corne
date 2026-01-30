@@ -89,7 +89,7 @@
             display-name = "SYMNUM";
             bindings = <
 &to 0      &kp EXCL              &kp AT                    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT                                &mmv MOVE_UP                     &kp SLASH  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp BSPC
-&trans     &kp HASH              &kp DOLLAR                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp COLON  &to 1
+&trans     &kp HASH              &kp DOLLAR                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp COLON  &kp ENTER
 &kp TILDE  &kp LS(LG(NUMBER_4))  &kp LS(LG(LC(NUMBER_4)))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp PLUS   &kp PERIOD
                                                            &trans                &trans                 &trans                                                                      &kp LT     &kp N0  &kp GT
             >;
@@ -100,7 +100,7 @@
         navi_layer2 {
             display-name = "navi";
             bindings = <
-&trans  &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                                  &mmv MOVE_UP                     &kp PAGE_UP    &kp LG(LEFT)      &kp UP_ARROW       &kp LG(RIGHT)  &kp HOME              &kp END
+&to 0   &kp LG(W)  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP                                  &mmv MOVE_UP                     &kp PAGE_UP    &kp LG(LEFT)      &kp UP_ARROW       &kp LG(RIGHT)  &kp HOME              &kp END
 &trans  &kp LALT   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
 &trans  &none      &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans          &kp C_MUTE                    &mmv MOVE_DOWN                   &none          &kp LA(LEFT)      &none              &kp LA(RIGHT)  &to 2                 &trans
                                    &trans          &trans           &trans                                                                         &to 0          &kp LC(LA(LEFT))  &kp LC(LA(RIGHT))
@@ -124,7 +124,7 @@
         sys_layer_4 {
             display-name = "sys";
             bindings = <
-&soft_off   &none         &none         &none         &none         &out OUT_BLE                                &mmv MOVE_UP                     &none  &none  &none  &none  &none  &none
+&to 0       &soft_off     &none         &none         &none         &out OUT_BLE                                &mmv MOVE_UP                     &none  &none  &none  &none  &none  &none
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
 &sys_reset  &none         &none         &none         &none         &out OUT_USB  &kp C_MUTE                    &mmv MOVE_DOWN                   &none  &none  &none  &none  &none  &trans
                                         &to 0         &to 0         &to 0                                                                        &to 0  &to 0  &to 0
