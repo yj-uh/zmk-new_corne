@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '-', s: _}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Gui+Ctl+Sft+4
+  - {t: '$$mdi:transfer$$', type: trans}
   - '#'
   - $
   - (
@@ -79,8 +79,8 @@ layers:
   - ':'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '~'
-  - {t: 'Gui+[', s: 'Gui+{'}
-  - {t: 'Gui+]', s: 'Gui+}'}
+  - Gui+Sft+4
+  - Gui+Sft+Ctl+4
   - '{'
   - '}'
   - '&'
