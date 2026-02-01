@@ -34,7 +34,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT SPACE>, <&caps_word>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
 
         hold_to: hold_to {
@@ -76,10 +76,10 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R  &kp T                               &kp UP                &kp Y           &kp U      &kp I            &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
-&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N           &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp LALT
-                              &mt LGUI TAB  &td0   &lt 1 UNDER                                               &lt 2 CAPSLOCK  &kp ENTER  &lt 3 BACKSLASH
+&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R        &kp T                         &kp UP                &kp Y           &kp U      &kp I            &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F        &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
+&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B  &kp SPACE              &kp DOWN              &kp N           &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp LALT
+                              &mt LGUI TAB  &lt 1 SPACE  &td0                                                &lt 2 CAPSLOCK  &kp ENTER  &lt 3 BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
