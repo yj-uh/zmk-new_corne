@@ -77,8 +77,8 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - ':'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - _
-  - '~'
   - Gui+Sft+4
   - Gui+Sft+Ctl+4
   - '{'
