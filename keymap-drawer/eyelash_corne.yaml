@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
+  - {t: '$$mdi:keyboard-space$$', h: SYMNUM}
   - '&td0'
-  - {t: _, h: SYMNUM}
   - {t: '$$mdi:apple-keyboard-caps$$', h: navi}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: \, h: Fn, s: '|'}
@@ -93,8 +93,8 @@ layers:
   - +
   - .
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - <
   - {t: '0', s: )}
   - '>'
