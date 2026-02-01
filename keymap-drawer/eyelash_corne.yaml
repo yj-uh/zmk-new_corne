@@ -189,7 +189,7 @@ layers:
   - PLAY PAUSE
   - $$mdi:skip-next$$
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: SYMNUM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
