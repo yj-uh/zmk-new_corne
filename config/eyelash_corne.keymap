@@ -45,6 +45,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        hold_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -76,10 +86,10 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R        &kp T                         &kp UP                &kp Y           &kp U      &kp I            &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F        &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
-&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V        &kp B  &kp SPACE              &kp DOWN              &kp N           &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp LALT
-                              &mt LGUI TAB  &lt 1 SPACE  &td0                                                &lt 2 CAPSLOCK  &kp ENTER  &lt 3 BACKSLASH
+&kp ESCAPE      &hold_tap EXCLAMATION Q  &kp W  &kp E         &kp R        &kp T                         &kp UP                &kp Y           &kp U      &kp I            &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB   &kp A                    &kp S  &kp D         &kp F        &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J      &kp K            &kp L    &kp SEMI  &kp SQT
+&mt LALT GRAVE  &kp Z                    &kp X  &kp C         &kp V        &kp B  &kp SPACE              &kp DOWN              &kp N           &kp M      &kp COMMA        &kp DOT  &kp FSLH  &kp LALT
+                                                &mt LGUI TAB  &lt 1 SPACE  &td0                                                &lt 2 CAPSLOCK  &kp ENTER  &lt 3 BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
