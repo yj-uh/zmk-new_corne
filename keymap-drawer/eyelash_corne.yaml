@@ -80,7 +80,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - _
   - '?'
-  - Gui+Sft+Ctl+4
+  - Gui+Sft+4
   - '{'
   - '}'
   - '&'
