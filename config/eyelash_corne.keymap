@@ -28,7 +28,7 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-&lt { tapping-term-ms = <120>; };
+&lt { tapping-term-ms = <170>; };
 
 / {
     behaviors {
