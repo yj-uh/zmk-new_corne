@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&td1'
   - {t: '$$mdi:keyboard-tab$$', h: SYMNUM}
   - {t: '$$mdi:apple-keyboard-caps$$', h: navi}
   - {t: '$$mdi:keyboard-return$$', h: SYMNUM}
