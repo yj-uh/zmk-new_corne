@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
-  - {t: '$$mdi:keyboard-space$$', h: SYMNUM}
-  - '&td0'
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMNUM}
   - {t: '$$mdi:apple-keyboard-caps$$', h: navi}
   - {t: '$$mdi:keyboard-return$$', h: SYMNUM}
   - {t: \, h: Fn, s: '|'}
@@ -93,8 +93,8 @@ layers:
   - .
   - +
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - <
   - {t: '0', s: ), type: held alternate}
   - '>'
