@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - '&key_repeat'
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - '&td1'
   - '&td0'
