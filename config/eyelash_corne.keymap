@@ -68,6 +68,8 @@
             label = "td space l1 mission ctrl";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&lt 1 LC(UP_ARROW)>;
+
+            tapping-term-ms = <150>;
         };
     };
 
