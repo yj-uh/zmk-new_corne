@@ -57,12 +57,12 @@ layers:
   - {t: ']', s: '}'}
   - '%'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '0', s: )}
+  - {t: /, s: '?'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - +
   - {t: '$$mdi:transfer$$', type: trans}
   - '#'
   - $
@@ -91,7 +91,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - .
-  - +
+  - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
