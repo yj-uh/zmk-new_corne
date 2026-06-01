@@ -190,7 +190,7 @@ layers:
   - $$mdi:skip-next$$
   - F12
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&soft_off'
   - {t: SYMNUM, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: navi, h: toggle}
