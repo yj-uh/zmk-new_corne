@@ -94,11 +94,6 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <16 17>;
-        };
     };
 
     keymap {
