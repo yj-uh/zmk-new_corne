@@ -102,10 +102,10 @@
         default_layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R  &kp T                         &kp UP                &kp Y           &kp U        &kp I            &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB   &kp A  &kp S  &kp D         &kp F  &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&mt LALT GRAVE  &kp Z  &kp X  &kp C         &kp V  &kp B  &kp SPACE              &kp DOWN              &kp N           &kp M        &kp COMMA        &kp DOT  &kp FSLH  &key_repeat
-                              &mt LGUI TAB  &td1   &td0                                                &lt 2 CAPSLOCK  &lt 1 ENTER  &lt 3 BACKSLASH
+&kp TAB         &kp Q  &kp W  &kp E                      &kp R  &kp T                         &kp UP                &kp Y        &kp U  &kp I            &kp O    &kp P     &kp BSPC
+&mt LCTRL CAPS  &kp A  &kp S  &kp D                      &kp F  &kp G               &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
+&mt LALT GRAVE  &kp Z  &kp X  &kp C                      &kp V  &kp B  &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA        &kp DOT  &kp FSLH  &kp ESCAPE
+                              &mt LGUI LG(LS(NUMBER_4))  &td1   &td0                                                &lt 2 ENTER  &mo 1  &lt 3 BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -115,8 +115,8 @@
             display-name = "SYMNUM";
             bindings = <
 &to 0      &kp EXCL      &kp AT                &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT                                &mmv MOVE_UP                     &kp PLUS   &kp N7  &kp N8  &kp N9  &kp MINUS  &kp BACKSPACE
-&trans     &kp HASH      &kp DOLLAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp COLON  &kp DOUBLE_QUOTES
-&kp TILDE  &kp QUESTION  &kp LG(LS(NUMBER_4))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N0     &kp UNDERSCORE
+&trans     &kp HASH      &kp DOLLAR            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp COLON  &kp UNDERSCORE
+&kp TILDE  &kp QUESTION  &kp LG(LS(NUMBER_4))  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AMPS     &kp C_MUTE                    &mmv MOVE_DOWN                   &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp N0     &kp SLASH
                                                &trans                &trans                 &trans                                                                      &kp LT     &kp N0  &kp GT
             >;
 
