@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - Q
   - W
   - E
@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -42,12 +42,12 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:keyboard-esc$$
+  - $$mdi:apple-keyboard-caps$$
   - {t: Gui+Sft+4, h: LGUI}
   - '&td1'
   - '&td0'
-  - SYMNUM
   - {t: '$$mdi:keyboard-return$$', h: navi}
+  - SYMNUM
   - {t: \, h: Fn, s: '|'}
   SYMNUM:
   - {t: QWERTY, h: toggle}
@@ -95,8 +95,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: <, type: held}
-  - {t: '0', s: )}
+  - <
+  - {t: '0', s: ), type: held}
   - '>'
   navi:
   - {t: QWERTY, h: toggle}
@@ -144,8 +144,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
-  - {t: 'Ctl+Alt+$$mdi:arrow-left-bold$$', type: held}
+  - {t: QWERTY, h: toggle, type: held}
+  - Ctl+Alt+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
