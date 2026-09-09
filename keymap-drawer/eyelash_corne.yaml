@@ -43,7 +43,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: Gui+Sft+4, h: LGUI}
+  - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - '&td1'
   - '&td0'
   - {t: '$$mdi:keyboard-return$$', h: navi}
@@ -248,3 +248,5 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
+- p: [14, 15]
+  k: Sft+Gui+4
