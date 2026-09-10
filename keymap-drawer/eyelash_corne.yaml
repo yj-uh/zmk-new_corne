@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: LGUI}
   - '&td1'
   - '&td0'
-  - '&td2_caps_l2'
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: navi}
   - SYMNUM
   - {t: \, h: Fn, s: '|'}
   SYMNUM:
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
+  - {t: QWERTY, h: toggle, type: held}
   - Ctl+Alt+$$mdi:arrow-left-bold$$
   - Ctl+Alt+$$mdi:arrow-right-bold$$
   Fn:
